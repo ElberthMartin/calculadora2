@@ -201,10 +201,10 @@ namespace CALCULADORA
         {//si tiene una longitud a uno 
             if (cajaresultado.Text.Length > 1)
             {//generamos un valor 
-                string txtResultado=cajaresultado.Text;
-                txtResultado=txtResultado.Substring(0, txtResultado.Length-1);
-               
-                if (txtResultado.Length ==1 && txtResultado.Contains("-"))
+                string txtResultado = cajaresultado.Text;
+                txtResultado = txtResultado.Substring(0, txtResultado.Length - 1);
+
+                if (txtResultado.Length == 1 && txtResultado.Contains("-"))
                 {
                     cajaresultado.Text = "0";
 
@@ -215,12 +215,17 @@ namespace CALCULADORA
                 }
 
 
-              
+
             }
             else
             {
-                cajaresultado.Text="0";
+                cajaresultado.Text = "0";
             }
+        }
+
+        private void btnpunto_Click(object sender, EventArgs e)
+        {
+cajaresultado.Text += ".";
         }
     }
 }

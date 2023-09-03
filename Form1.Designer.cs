@@ -212,6 +212,7 @@
             btnpunto.TabIndex = 21;
             btnpunto.Text = ".";
             btnpunto.UseVisualStyleBackColor = true;
+            btnpunto.Click += btnpunto_Click;
             // 
             // btncero
             // 
