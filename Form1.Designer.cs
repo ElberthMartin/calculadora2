@@ -66,6 +66,7 @@
             cajaresultado.Location = new Point(14, 51);
             cajaresultado.Multiline = true;
             cajaresultado.Name = "cajaresultado";
+            cajaresultado.ReadOnly = true;
             cajaresultado.Size = new Size(248, 35);
             cajaresultado.TabIndex = 1;
             cajaresultado.Text = "0";
@@ -80,6 +81,7 @@
             btnuno.TabIndex = 7;
             btnuno.Text = "1";
             btnuno.UseVisualStyleBackColor = true;
+            btnuno.Click += btnuno_Click;
             // 
             // btndos
             // 
@@ -90,6 +92,7 @@
             btndos.TabIndex = 8;
             btndos.Text = "2";
             btndos.UseVisualStyleBackColor = true;
+            btndos.Click += btndos_Click;
             // 
             // btnsuma
             // 
