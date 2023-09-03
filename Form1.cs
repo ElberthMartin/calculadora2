@@ -103,7 +103,11 @@ namespace CALCULADORA
             {
                 valor2=Convert.ToDouble(cajaresultado.Text);
                 lblhistorial.Text += valor2 + "=";
-                
+                //calculamos resultado
+                double resultado = valor1 + valor2;
+                valor1 = 0;
+                valor2 = 0;
+                cajaresultado.Text=Convert.ToString(resultado);
             }
         }
     }
