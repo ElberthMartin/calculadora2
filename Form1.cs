@@ -63,7 +63,8 @@ namespace CALCULADORA
                     if (valor2 == 0)
                     //aplicamos una advertencia
                     {
-                        MessageBox.Show("No se puede dividir entre 0");
+                        //MessageBox.Show("No se puede dividir entre 0");
+                        lblhistorial.Text = "no se puede dividir entre cero";
                         resultado = 0;
                     }
                     else
@@ -88,10 +89,15 @@ namespace CALCULADORA
         private void btncero_Click(object sender, EventArgs e)
         {
             unnumeroleido = true;
-            //llamamos
-            {
-                leernumero("0");
+            if(cajaresultado.Text=="0")
+            { return;
             }
+            else
+            {
+                cajaresultado.Text += "0";
+            }
+            //llamamos
+           
 
         }
 
