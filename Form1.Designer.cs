@@ -168,6 +168,7 @@
             btnmultiplicar.TabIndex = 18;
             btnmultiplicar.Text = "X";
             btnmultiplicar.UseVisualStyleBackColor = true;
+            btnmultiplicar.Click += btnmultiplicar_Click;
             // 
             // btnnueve
             // 
@@ -243,6 +244,7 @@
             btnmodulo.TabIndex = 23;
             btnmodulo.Text = "%";
             btnmodulo.UseVisualStyleBackColor = true;
+            btnmodulo.Click += btnmodulo_Click;
             // 
             // btndivicion
             // 
@@ -253,6 +255,7 @@
             btndivicion.TabIndex = 24;
             btndivicion.Text = "/";
             btndivicion.UseVisualStyleBackColor = true;
+            btndivicion.Click += btndivicion_Click;
             // 
             // btnreset
             // 

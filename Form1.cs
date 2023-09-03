@@ -4,12 +4,12 @@ namespace CALCULADORA
 
     public enum operacion
     {
-        nodefinida=0,
-            suma=1,
-            resta=2,
-            division=3,
-            multiplicacion=4,
-            modulo=5,
+        nodefinida = 0,
+        suma = 1,
+        resta = 2,
+        division = 3,
+        multiplicacion = 4,
+        modulo = 5,
     }
 
     public partial class Form1 : Form
@@ -48,12 +48,10 @@ namespace CALCULADORA
 
 
             {
-                case "+":
+               case operacion.suma:
                     resultado = valor1 + valor2;
                     break;
-                case "-":
-                    resultado = valor1 - valor2;
-                    break;
+
             }
             return resultado;
         }
@@ -117,14 +115,18 @@ namespace CALCULADORA
         {
             leernumero("9");
         }
-        //creamos para el historial un metodo
+        //creamos para el historial un metodo 
+        private void obtenervalor(string operador)
+        {
+            valor1 = Convert.ToDouble(cajaresultado.Text);
+            lblhistorial.Text = cajaresultado.Text +  operador ;
+            cajaresultado.Text = "0";
+        }
         private void btnsuma_Click(object sender, EventArgs e)
         {
             operador = operacion.suma;
             //ahora convertimos
-            valor1 = Convert.ToDouble(cajaresultado.Text);
-            lblhistorial.Text = cajaresultado.Text + " + ";
-            cajaresultado.Text = "0";
+            obtenervalor("+");
 
         }
 
@@ -136,7 +138,7 @@ namespace CALCULADORA
                 valor2 = Convert.ToDouble(cajaresultado.Text);
                 lblhistorial.Text += valor2 + "=";
                 //calculamos resultado
-                double resultado = ejecutaroperacion("+");
+                double resultado = ejecutaroperacion();
                 valor1 = 0;
                 valor2 = 0;
                 cajaresultado.Text = Convert.ToString(resultado);
@@ -145,10 +147,26 @@ namespace CALCULADORA
 
         private void btnresta_Click(object sender, EventArgs e)
         {
-            //ahora convertimos
-            valor1 = Convert.ToDouble(cajaresultado.Text);
-            lblhistorial.Text = cajaresultado.Text + " - ";
-            cajaresultado.Text = "0";
+            operador = operacion.resta;
+            obtenervalor("-");
+        }
+
+        private void btnmultiplicar_Click(object sender, EventArgs e)
+        {
+            operador = operacion.multiplicacion;
+            obtenervalor("x");
+        }
+
+        private void btndivicion_Click(object sender, EventArgs e)
+        {
+            operador = operacion.division;
+            obtenervalor("/");
+        }
+
+        private void btnmodulo_Click(object sender, EventArgs e)
+        {
+            operador = operacion.modulo;
+            obtenervalor("%");
         }
     }
 }
