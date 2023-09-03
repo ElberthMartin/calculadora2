@@ -51,12 +51,22 @@ namespace CALCULADORA
                 case operacion.suma:
                     resultado = valor1 + valor2;
                     break;
-               
+
                 case operacion.resta:
                     resultado = valor1 - valor2;
                     break;
                 case operacion.division:
-                    resultado = valor1 / valor2;
+                    //no podemos dividir entre 0
+                    if (valor2 == 0)
+                    //aplicamos una advertencia
+                    {
+                        MessageBox.Show("No se puede dividir entre 0");
+                        resultado = 0;
+                    }
+                    else
+                    {
+                        resultado = valor1 / valor2;
+                    }
                     break;
                 case operacion.multiplicacion:
                     resultado = valor1 * valor2;
@@ -131,7 +141,7 @@ namespace CALCULADORA
         private void obtenervalor(string operador)
         {
             valor1 = Convert.ToDouble(cajaresultado.Text);
-            lblhistorial.Text = cajaresultado.Text +  operador ;
+            lblhistorial.Text = cajaresultado.Text + operador;
             cajaresultado.Text = "0";
         }
         private void btnsuma_Click(object sender, EventArgs e)
@@ -179,6 +189,38 @@ namespace CALCULADORA
         {
             operador = operacion.modulo;
             obtenervalor("%");
+        }
+        //BOTON BORRAR TODO
+        private void btnreset_Click(object sender, EventArgs e)
+        {
+            cajaresultado.Text = "0";
+            lblhistorial.Text = "";
+        }
+        //BOTON BORRAR UNO POR UNO
+        private void btnborrar_Click(object sender, EventArgs e)
+        {//si tiene una longitud a uno 
+            if (cajaresultado.Text.Length > 1)
+            {//generamos un valor 
+                string txtResultado=cajaresultado.Text;
+                txtResultado=txtResultado.Substring(0, txtResultado.Length-1);
+               
+                if (txtResultado.Length ==1 && txtResultado.Contains("-"))
+                {
+                    cajaresultado.Text = "0";
+
+                }
+                else
+                {
+                    cajaresultado.Text = txtResultado;
+                }
+
+
+              
+            }
+            else
+            {
+                cajaresultado.Text="0";
+            }
         }
     }
 }

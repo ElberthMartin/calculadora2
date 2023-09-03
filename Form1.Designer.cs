@@ -266,6 +266,7 @@
             btnreset.TabIndex = 25;
             btnreset.Text = "C";
             btnreset.UseVisualStyleBackColor = true;
+            btnreset.Click += btnreset_Click;
             // 
             // btnborrar
             // 
@@ -276,6 +277,7 @@
             btnborrar.TabIndex = 26;
             btnborrar.Text = "<--";
             btnborrar.UseVisualStyleBackColor = true;
+            btnborrar.Click += btnborrar_Click;
             // 
             // Form1
             // 
