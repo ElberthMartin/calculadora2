@@ -1,6 +1,7 @@
 namespace CALCULADORA
 {
     //agregamos dentro de namespace para definir
+
     public enum operacion
     {
         nodefinida=0,
@@ -17,6 +18,7 @@ namespace CALCULADORA
         double valor1 = 0;
         //otra variable para la operacion
         double valor2 = 0;
+        operacion operador = operacion.nodefinida;
         public Form1()
         {
             InitializeComponent();
@@ -115,9 +117,10 @@ namespace CALCULADORA
         {
             leernumero("9");
         }
-
+        //creamos para el historial un metodo
         private void btnsuma_Click(object sender, EventArgs e)
         {
+            operador = operacion.suma;
             //ahora convertimos
             valor1 = Convert.ToDouble(cajaresultado.Text);
             lblhistorial.Text = cajaresultado.Text + " + ";
