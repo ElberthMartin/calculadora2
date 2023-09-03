@@ -26,6 +26,24 @@ namespace CALCULADORA
                 cajaresultado.Text += numero;
             }
         }
+
+        //creamos un metodo para operacion
+        private double ejecutaroperacion(string operador)
+        {
+            double resultado = 0;
+            switch (operador)
+
+
+            {
+                case "+":
+                    resultado = valor1+valor2;
+                    break;
+                    case "-": 
+                    resultado = valor1-valor2;
+                    break;
+            }
+            return resultado;
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -104,7 +122,7 @@ namespace CALCULADORA
                 valor2=Convert.ToDouble(cajaresultado.Text);
                 lblhistorial.Text += valor2 + "=";
                 //calculamos resultado
-                double resultado = valor1 + valor2;
+                double resultado = ejecutaroperacion("+");
                 valor1 = 0;
                 valor2 = 0;
                 cajaresultado.Text=Convert.ToString(resultado);
