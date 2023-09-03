@@ -224,7 +224,11 @@ namespace CALCULADORA
         }
 
         private void btnpunto_Click(object sender, EventArgs e)
-        {
+        {// si no preguntamos los puntos se van de largo .......
+            if(cajaresultado.Text.Contains("."))
+            {
+                return;
+            }
 cajaresultado.Text += ".";
         }
     }
