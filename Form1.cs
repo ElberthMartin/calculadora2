@@ -2,6 +2,8 @@ namespace CALCULADORA
 {
     public partial class Form1 : Form
     {
+        //DECLARAMOS UN VALOR DE TIPO DOUBLE
+        double valor1 = 0;
 
         public Form1()
         {
@@ -86,6 +88,10 @@ namespace CALCULADORA
 
         private void btnsuma_Click(object sender, EventArgs e)
         {
+            //ahora convertimos
+            valor1 = Convert.ToDouble(cajaresultado.Text);
+            lblhistorial.Text = cajaresultado.Text + " + ";
+            cajaresultado.Text = "0";
 
         }
     }

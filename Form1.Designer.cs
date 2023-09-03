@@ -54,11 +54,10 @@
             // lblhistorial
             // 
             lblhistorial.AutoSize = true;
-            lblhistorial.Location = new Point(12, 9);
+            lblhistorial.Location = new Point(48, 18);
             lblhistorial.Name = "lblhistorial";
-            lblhistorial.Size = new Size(38, 15);
+            lblhistorial.Size = new Size(0, 15);
             lblhistorial.TabIndex = 0;
-            lblhistorial.Text = "label1";
             // 
             // cajaresultado
             // 
