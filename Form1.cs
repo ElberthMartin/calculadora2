@@ -4,7 +4,8 @@ namespace CALCULADORA
     {
         //DECLARAMOS UN VALOR DE TIPO DOUBLE
         double valor1 = 0;
-
+        //otra variable para la operacion
+        double valor2 = 0;
         public Form1()
         {
             InitializeComponent();
@@ -93,6 +94,17 @@ namespace CALCULADORA
             lblhistorial.Text = cajaresultado.Text + " + ";
             cajaresultado.Text = "0";
 
+        }
+
+        private void btnresultado_Click(object sender, EventArgs e)
+        {
+            //preguntamos si el valor
+            if(valor2==0)
+            {
+                valor2=Convert.ToDouble(cajaresultado.Text);
+                lblhistorial.Text += valor2 + "=";
+                
+            }
         }
     }
 }

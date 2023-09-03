@@ -231,6 +231,7 @@
             btnresultado.TabIndex = 22;
             btnresultado.Text = "=";
             btnresultado.UseVisualStyleBackColor = true;
+            btnresultado.Click += btnresultado_Click;
             // 
             // btnmodulo
             // 
