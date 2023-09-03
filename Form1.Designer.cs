@@ -103,6 +103,7 @@
             btnsuma.TabIndex = 10;
             btnsuma.Text = "+";
             btnsuma.UseVisualStyleBackColor = true;
+            btnsuma.Click += btnsuma_Click;
             // 
             // btntres
             // 
@@ -113,6 +114,7 @@
             btntres.TabIndex = 9;
             btntres.Text = "3";
             btntres.UseVisualStyleBackColor = true;
+            btntres.Click += btntres_Click;
             // 
             // btnresta
             // 
@@ -133,6 +135,7 @@
             btnseis.TabIndex = 13;
             btnseis.Text = "6";
             btnseis.UseVisualStyleBackColor = true;
+            btnseis.Click += btnseis_Click;
             // 
             // btncinco
             // 
@@ -143,6 +146,7 @@
             btncinco.TabIndex = 12;
             btncinco.Text = "5";
             btncinco.UseVisualStyleBackColor = true;
+            btncinco.Click += btncinco_Click;
             // 
             // btncuatro
             // 
@@ -153,6 +157,7 @@
             btncuatro.TabIndex = 11;
             btncuatro.Text = "4";
             btncuatro.UseVisualStyleBackColor = true;
+            btncuatro.Click += btncuatro_Click;
             // 
             // btnmultiplicar
             // 
@@ -173,6 +178,7 @@
             btnnueve.TabIndex = 17;
             btnnueve.Text = "9";
             btnnueve.UseVisualStyleBackColor = true;
+            btnnueve.Click += btnnueve_Click;
             // 
             // btnocho
             // 
@@ -183,6 +189,7 @@
             btnocho.TabIndex = 16;
             btnocho.Text = "8";
             btnocho.UseVisualStyleBackColor = true;
+            btnocho.Click += btnocho_Click;
             // 
             // btnsiete
             // 
@@ -193,6 +200,7 @@
             btnsiete.TabIndex = 15;
             btnsiete.Text = "7";
             btnsiete.UseVisualStyleBackColor = true;
+            btnsiete.Click += btnsiete_Click;
             // 
             // btnpunto
             // 

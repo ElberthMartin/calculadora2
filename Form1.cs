@@ -2,6 +2,7 @@ namespace CALCULADORA
 {
     public partial class Form1 : Form
     {
+
         public Form1()
         {
             InitializeComponent();
@@ -42,8 +43,48 @@ namespace CALCULADORA
                 leernumero("1");
             }
         }
-
+        //2
         private void btndos_Click(object sender, EventArgs e)
+        {
+            leernumero("2");
+        }
+
+        private void btntres_Click(object sender, EventArgs e)
+        {
+            leernumero("3");
+        }
+
+        private void btncuatro_Click(object sender, EventArgs e)
+        {
+            leernumero("4");
+        }
+
+        private void btncinco_Click(object sender, EventArgs e)
+        {
+            leernumero("5");
+        }
+
+        private void btnseis_Click(object sender, EventArgs e)
+        {
+            leernumero("6");
+        }
+
+        private void btnsiete_Click(object sender, EventArgs e)
+        {
+            leernumero("7");
+        }
+
+        private void btnocho_Click(object sender, EventArgs e)
+        {
+            leernumero("8");
+        }
+
+        private void btnnueve_Click(object sender, EventArgs e)
+        {
+            leernumero("9");
+        }
+
+        private void btnsuma_Click(object sender, EventArgs e)
         {
 
         }
