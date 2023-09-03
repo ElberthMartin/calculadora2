@@ -48,10 +48,22 @@ namespace CALCULADORA
 
 
             {
-               case operacion.suma:
+                case operacion.suma:
                     resultado = valor1 + valor2;
                     break;
-
+               
+                case operacion.resta:
+                    resultado = valor1 - valor2;
+                    break;
+                case operacion.division:
+                    resultado = valor1 / valor2;
+                    break;
+                case operacion.multiplicacion:
+                    resultado = valor1 * valor2;
+                    break;
+                case operacion.modulo:
+                    resultado = valor1 % valor2;
+                    break;
             }
             return resultado;
         }
