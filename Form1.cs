@@ -41,7 +41,7 @@ namespace CALCULADORA
         }
 
         //creamos un metodo para operacion
-        private double ejecutaroperacion(string operador)
+        private double ejecutaroperacion()
         {
             double resultado = 0;
             switch (operador)
