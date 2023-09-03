@@ -11,5 +11,10 @@ namespace CALCULADORA
         {
 
         }
+
+        private void btncero_Click(object sender, EventArgs e)
+        {
+            cajaresultado.Text += "0";
+        }
     }
 }
