@@ -124,6 +124,7 @@
             btnresta.TabIndex = 14;
             btnresta.Text = "-";
             btnresta.UseVisualStyleBackColor = true;
+            btnresta.Click += btnresta_Click;
             // 
             // btnseis
             // 

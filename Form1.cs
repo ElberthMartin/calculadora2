@@ -1,5 +1,16 @@
 namespace CALCULADORA
 {
+    //agregamos dentro de namespace para definir
+    public enum operacion
+    {
+        nodefinida=0,
+            suma=1,
+            resta=2,
+            division=3,
+            multiplicacion=4,
+            modulo=5,
+    }
+
     public partial class Form1 : Form
     {
         //DECLARAMOS UN VALOR DE TIPO DOUBLE
@@ -36,10 +47,10 @@ namespace CALCULADORA
 
             {
                 case "+":
-                    resultado = valor1+valor2;
+                    resultado = valor1 + valor2;
                     break;
-                    case "-": 
-                    resultado = valor1-valor2;
+                case "-":
+                    resultado = valor1 - valor2;
                     break;
             }
             return resultado;
@@ -117,16 +128,24 @@ namespace CALCULADORA
         private void btnresultado_Click(object sender, EventArgs e)
         {
             //preguntamos si el valor
-            if(valor2==0)
+            if (valor2 == 0)
             {
-                valor2=Convert.ToDouble(cajaresultado.Text);
+                valor2 = Convert.ToDouble(cajaresultado.Text);
                 lblhistorial.Text += valor2 + "=";
                 //calculamos resultado
                 double resultado = ejecutaroperacion("+");
                 valor1 = 0;
                 valor2 = 0;
-                cajaresultado.Text=Convert.ToString(resultado);
+                cajaresultado.Text = Convert.ToString(resultado);
             }
+        }
+
+        private void btnresta_Click(object sender, EventArgs e)
+        {
+            //ahora convertimos
+            valor1 = Convert.ToDouble(cajaresultado.Text);
+            lblhistorial.Text = cajaresultado.Text + " - ";
+            cajaresultado.Text = "0";
         }
     }
 }
