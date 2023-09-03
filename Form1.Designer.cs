@@ -217,7 +217,7 @@
             // btncero
             // 
             btncero.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            btncero.Location = new Point(14, 375);
+            btncero.Location = new Point(12, 375);
             btncero.Name = "btncero";
             btncero.Size = new Size(127, 61);
             btncero.TabIndex = 19;

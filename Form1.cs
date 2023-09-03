@@ -19,6 +19,8 @@ namespace CALCULADORA
         //otra variable para la operacion
         double valor2 = 0;
         operacion operador = operacion.nodefinida;
+        //declaramos un variable de tipo bool
+        bool unnumeroleido = false;
         public Form1()
         {
             InitializeComponent();
@@ -29,6 +31,7 @@ namespace CALCULADORA
         private void leernumero(string numero)
         //colocamos void no va devolver nada
         {
+            unnumeroleido=true;
             if (cajaresultado.Text == "0" && cajaresultado.Text != null)
 
             {
@@ -84,6 +87,7 @@ namespace CALCULADORA
         //para el boton cero
         private void btncero_Click(object sender, EventArgs e)
         {
+            unnumeroleido = true;
             //llamamos
             {
                 leernumero("0");
@@ -155,7 +159,7 @@ namespace CALCULADORA
         private void btnresultado_Click(object sender, EventArgs e)
         {
             //preguntamos si el valor
-            if (valor2 == 0)
+            if (valor2 == 0 && unnumeroleido)
             {
                 valor2 = Convert.ToDouble(cajaresultado.Text);
                 lblhistorial.Text += valor2 + "=";
@@ -163,6 +167,8 @@ namespace CALCULADORA
                 double resultado = ejecutaroperacion();
                 valor1 = 0;
                 valor2 = 0;
+                //regresamos
+                unnumeroleido = false;
                 cajaresultado.Text = Convert.ToString(resultado);
             }
         }
@@ -225,11 +231,11 @@ namespace CALCULADORA
 
         private void btnpunto_Click(object sender, EventArgs e)
         {// si no preguntamos los puntos se van de largo .......
-            if(cajaresultado.Text.Contains("."))
+            if (cajaresultado.Text.Contains("."))
             {
                 return;
             }
-cajaresultado.Text += ".";
+            cajaresultado.Text += ".";
         }
     }
 }
