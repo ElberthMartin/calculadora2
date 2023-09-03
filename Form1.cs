@@ -11,10 +11,19 @@ namespace CALCULADORA
         {
 
         }
-
+        //para el boton cero
         private void btncero_Click(object sender, EventArgs e)
         {
-            cajaresultado.Text += "0";
+            //si tiene otro numero qe continue si tiene cer no 
+           // cajaresultado.Text += "0";
+        if (cajaresultado.Text=="0")
+{//retornamos
+                return;
+            }
+        else
+            {
+                cajaresultado.Text += "0";
+            }
         }
     }
 }
