@@ -14,3 +14,4 @@ C:\Users\USER\Desktop\proyectosc#\calculadora\obj\Debug\net6.0-windows\refint\CA
 C:\Users\USER\Desktop\proyectosc#\calculadora\obj\Debug\net6.0-windows\CALCULADORA.pdb
 C:\Users\USER\Desktop\proyectosc#\calculadora\obj\Debug\net6.0-windows\CALCULADORA.genruntimeconfig.cache
 C:\Users\USER\Desktop\proyectosc#\calculadora\obj\Debug\net6.0-windows\ref\CALCULADORA.dll
+C:\Users\USER\Desktop\proyectosc#\calculadora\obj\Debug\net6.0-windows\CALCULADORA.Properties.Resources.resources

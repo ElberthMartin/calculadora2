@@ -1,0 +1,5 @@
+C:\Users\USER\Desktop\proyectosc#\CALCULADORA\CALCULADORA.exe
+C:\Users\USER\Desktop\proyectosc#\CALCULADORA\CALCULADORA.dll
+C:\Users\USER\Desktop\proyectosc#\CALCULADORA\CALCULADORA.deps.json
+C:\Users\USER\Desktop\proyectosc#\CALCULADORA\CALCULADORA.runtimeconfig.json
+C:\Users\USER\Desktop\proyectosc#\CALCULADORA\CALCULADORA.pdb

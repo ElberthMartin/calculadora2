@@ -14,6 +14,10 @@ namespace CALCULADORA
 
     public partial class Form1 : Form
     {
+
+
+
+
         //DECLARAMOS UN VALOR DE TIPO DOUBLE
         double valor1 = 0;
         //otra variable para la operacion
@@ -31,7 +35,7 @@ namespace CALCULADORA
         private void leernumero(string numero)
         //colocamos void no va devolver nada
         {
-            unnumeroleido=true;
+            unnumeroleido = true;
             if (cajaresultado.Text == "0" && cajaresultado.Text != null)
 
             {
@@ -89,15 +93,16 @@ namespace CALCULADORA
         private void btncero_Click(object sender, EventArgs e)
         {
             unnumeroleido = true;
-            if(cajaresultado.Text=="0")
-            { return;
+            if (cajaresultado.Text == "0")
+            {
+                return;
             }
             else
             {
                 cajaresultado.Text += "0";
             }
             //llamamos
-           
+
 
         }
 
@@ -158,7 +163,7 @@ namespace CALCULADORA
         {
             operador = operacion.suma;
             //ahora convertimos
-            obtenervalor("+");
+            obtenervalor(" + ");
 
         }
 
@@ -168,7 +173,7 @@ namespace CALCULADORA
             if (valor2 == 0 && unnumeroleido)
             {
                 valor2 = Convert.ToDouble(cajaresultado.Text);
-                lblhistorial.Text += valor2 + "=";
+                lblhistorial.Text += valor2 + " = ";
                 //calculamos resultado
                 double resultado = ejecutaroperacion();
                 valor1 = 0;
@@ -182,25 +187,25 @@ namespace CALCULADORA
         private void btnresta_Click(object sender, EventArgs e)
         {
             operador = operacion.resta;
-            obtenervalor("-");
+            obtenervalor(" - ");
         }
 
         private void btnmultiplicar_Click(object sender, EventArgs e)
         {
             operador = operacion.multiplicacion;
-            obtenervalor("x");
+            obtenervalor(" x ");
         }
 
         private void btndivicion_Click(object sender, EventArgs e)
         {
             operador = operacion.division;
-            obtenervalor("/");
+            obtenervalor(" / ");
         }
 
         private void btnmodulo_Click(object sender, EventArgs e)
         {
             operador = operacion.modulo;
-            obtenervalor("%");
+            obtenervalor(" % ");
         }
         //BOTON BORRAR TODO
         private void btnreset_Click(object sender, EventArgs e)
@@ -242,6 +247,11 @@ namespace CALCULADORA
                 return;
             }
             cajaresultado.Text += ".";
+
         }
+
+
+
+
     }
 }
