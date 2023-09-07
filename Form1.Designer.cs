@@ -78,7 +78,8 @@
             // 
             // btnuno
             // 
-            btnuno.BackColor = SystemColors.ActiveBorder;
+            // Configuración inicial del botón btnuno
+            btnuno.BackColor = Color.Blue; // Color de fondo azul
             btnuno.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnuno.Location = new Point(14, 308);
             btnuno.Name = "btnuno";
@@ -87,10 +88,24 @@
             btnuno.Text = "1";
             btnuno.UseVisualStyleBackColor = false;
             btnuno.Click += btnuno_Click;
+
+            // Evento cuando el cursor entra en btnuno
+            btnuno.MouseEnter += (sender, e) =>
+            {
+                btnuno.BackColor = Color.LightSkyBlue; // Cambia el color de fondo a azul claro cuando el cursor entra
+            };
+
+            // Evento cuando el cursor sale de btnuno
+            btnuno.MouseLeave += (sender, e) =>
+            {
+                btnuno.BackColor = Color.Blue; // Restaura el color de fondo azul cuando el cursor sale
+            };
+
             // 
             // btndos
             // 
-            btndos.BackColor = SystemColors.ActiveBorder;
+            // Configuración inicial del botón btndos
+            btndos.BackColor = Color.Blue; // Color de fondo azul
             btndos.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             btndos.Location = new Point(80, 308);
             btndos.Name = "btndos";
@@ -99,6 +114,20 @@
             btndos.Text = "2";
             btndos.UseVisualStyleBackColor = false;
             btndos.Click += btndos_Click;
+
+            // Evento cuando el cursor entra en btndos
+            btndos.MouseEnter += (sender, e) =>
+            {
+                btndos.BackColor = Color.LightSkyBlue; // Cambia el color de fondo a azul claro cuando el cursor entra
+            };
+
+            // Evento cuando el cursor sale de btndos
+            btndos.MouseLeave += (sender, e) =>
+            {
+                btndos.BackColor = Color.Blue; // Restaura el color de fondo azul cuando el cursor sale
+            };
+
+
             // 
             // btnsuma
             // 
@@ -114,7 +143,8 @@
             // 
             // btntres
             // 
-            btntres.BackColor = SystemColors.ActiveBorder;
+            // Configuración inicial del botón btntres
+            btntres.BackColor = Color.Blue; // Color de fondo azul
             btntres.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             btntres.Location = new Point(147, 308);
             btntres.Name = "btntres";
@@ -123,6 +153,19 @@
             btntres.Text = "3";
             btntres.UseVisualStyleBackColor = false;
             btntres.Click += btntres_Click;
+
+            // Evento cuando el cursor entra en btntres
+            btntres.MouseEnter += (sender, e) =>
+            {
+                btntres.BackColor = Color.LightSkyBlue; // Cambia el color de fondo a azul claro cuando el cursor entra
+            };
+
+            // Evento cuando el cursor sale de btntres
+            btntres.MouseLeave += (sender, e) =>
+            {
+                btntres.BackColor = Color.Blue; // Restaura el color de fondo azul cuando el cursor sale
+            };
+
             // 
             // btnresta
             // 
@@ -138,7 +181,7 @@
             // 
             // btnseis
             // 
-            btnseis.BackColor = SystemColors.ActiveBorder;
+            btnseis.BackColor = Color.Blue;
             btnseis.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnseis.Location = new Point(147, 241);
             btnseis.Name = "btnseis";
@@ -147,10 +190,21 @@
             btnseis.Text = "6";
             btnseis.UseVisualStyleBackColor = false;
             btnseis.Click += btnseis_Click;
+
+            btnseis.MouseEnter += (sender, e) =>
+            {
+                btnseis.BackColor = Color.LightSkyBlue;
+            };
+
+            btnseis.MouseLeave += (sender, e) =>
+            {
+                btnseis.BackColor = Color.Blue;
+            };
+
             // 
             // btncinco
             // 
-            btncinco.BackColor = SystemColors.ActiveBorder;
+            btncinco.BackColor = Color.Blue;
             btncinco.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             btncinco.Location = new Point(80, 241);
             btncinco.Name = "btncinco";
@@ -159,10 +213,21 @@
             btncinco.Text = "5";
             btncinco.UseVisualStyleBackColor = false;
             btncinco.Click += btncinco_Click;
+
+            btncinco.MouseEnter += (sender, e) =>
+            {
+                btncinco.BackColor = Color.LightSkyBlue;
+            };
+
+            btncinco.MouseLeave += (sender, e) =>
+            {
+                btncinco.BackColor = Color.Blue;
+            };
+
             // 
             // btncuatro
             // 
-            btncuatro.BackColor = SystemColors.ActiveBorder;
+            btncuatro.BackColor = Color.Blue;
             btncuatro.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             btncuatro.Location = new Point(14, 241);
             btncuatro.Name = "btncuatro";
@@ -171,6 +236,17 @@
             btncuatro.Text = "4";
             btncuatro.UseVisualStyleBackColor = false;
             btncuatro.Click += btncuatro_Click;
+
+            btncuatro.MouseEnter += (sender, e) =>
+            {
+                btncuatro.BackColor = Color.LightSkyBlue;
+            };
+
+            btncuatro.MouseLeave += (sender, e) =>
+            {
+                btncuatro.BackColor = Color.Blue;
+            };
+
             // 
             // btnmultiplicar
             // 
@@ -186,7 +262,7 @@
             // 
             // btnnueve
             // 
-            btnnueve.BackColor = SystemColors.ActiveBorder;
+            btnnueve.BackColor = Color.Blue;
             btnnueve.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnnueve.Location = new Point(147, 174);
             btnnueve.Name = "btnnueve";
@@ -195,10 +271,21 @@
             btnnueve.Text = "9";
             btnnueve.UseVisualStyleBackColor = false;
             btnnueve.Click += btnnueve_Click;
+
+            btnnueve.MouseEnter += (sender, e) =>
+            {
+                btnnueve.BackColor = Color.LightSkyBlue;
+            };
+
+            btnnueve.MouseLeave += (sender, e) =>
+            {
+                btnnueve.BackColor = Color.Blue;
+            };
+
             // 
             // btnocho
             // 
-            btnocho.BackColor = SystemColors.ActiveBorder;
+            btnocho.BackColor = Color.Blue;
             btnocho.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnocho.Location = new Point(80, 174);
             btnocho.Name = "btnocho";
@@ -207,10 +294,21 @@
             btnocho.Text = "8";
             btnocho.UseVisualStyleBackColor = false;
             btnocho.Click += btnocho_Click;
+
+            btnocho.MouseEnter += (sender, e) =>
+            {
+                btnocho.BackColor = Color.LightSkyBlue;
+            };
+
+            btnocho.MouseLeave += (sender, e) =>
+            {
+                btnocho.BackColor = Color.Blue;
+            };
+
             // 
             // btnsiete
             // 
-            btnsiete.BackColor = SystemColors.ActiveBorder;
+            btnsiete.BackColor = Color.Blue;
             btnsiete.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnsiete.Location = new Point(14, 174);
             btnsiete.Name = "btnsiete";
@@ -219,6 +317,17 @@
             btnsiete.Text = "7";
             btnsiete.UseVisualStyleBackColor = false;
             btnsiete.Click += btnsiete_Click;
+
+            btnsiete.MouseEnter += (sender, e) =>
+            {
+                btnsiete.BackColor = Color.LightSkyBlue;
+            };
+
+            btnsiete.MouseLeave += (sender, e) =>
+            {
+                btnsiete.BackColor = Color.Blue;
+            };
+
             // 
             // btnpunto
             // 
